@@ -1,0 +1,17 @@
+fish:
+ - Word type: noun
+   Definition: aquatic creature with fins and scales
+   Example: Goldfish
+ - Word type: noun
+   Definition: a single fish
+   Example: Crocodile
+
+cat:
+ - Word type: noun
+   Definition: four-legged animal, often kept as a pet
+   Example: Robot cat
+
+dog:
+ - Word type: noun
+   Definition: four-legged animal, often kept as a pet
+   Example: Hunting dog

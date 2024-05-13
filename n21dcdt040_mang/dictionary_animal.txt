@@ -15,3 +15,4 @@ dog:
  - Word type: noun
    Definition: four-legged animal, often kept as a pet
    Example: Hunting dog
+# Thầy có thể dùng chức năng 5 để nhập từ từ điển từ file này 

@@ -1,4 +1,4 @@
-tu_dien = []  # Danh sách cục bộ lưu các từ để thực hiện các thao tác nhập, xóa, tìm kiếm, lưu từ điển và nạp từ điển
+tu_dien = []  # Danh sách lưu các từ để thực hiện các thao tác nhập, xóa, tìm kiếm, lưu từ điển và nạp từ điển
 
 # Hàm nhập từ (kiểm tra lỗi và sử dụng append để thêm vào danh sách )
 def Nhap_tu():

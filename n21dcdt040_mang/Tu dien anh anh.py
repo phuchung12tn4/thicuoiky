@@ -1,6 +1,6 @@
-tu_dien = []  # Mảng cục bộ lưu các từ để thực hiện các thao tác nhập, xóa, tìm kiếm, lưu từ điển và nạp từ điển
+tu_dien = []  # Danh sách cục bộ lưu các từ để thực hiện các thao tác nhập, xóa, tìm kiếm, lưu từ điển và nạp từ điển
 
-# Hàm nhập từ (kiểm tra lỗi và sử dụng append để thêm vào mảng cục bộ)
+# Hàm nhập từ (kiểm tra lỗi và sử dụng append để thêm vào danh sách )
 def Nhap_tu():
       global tu_dien
       while True:
@@ -50,7 +50,7 @@ def Nhap_tu():
 
       return tu_dien
 
-# Hàm xóa từ (Dùng remove để xóa khỏi mảng)
+# Hàm xóa từ (Dùng remove để xóa khỏi danh sách)
 def Xoa_tu(tu_dien):
         word_to_delete = input('Enter the word to delete: ')
         for entry in tu_dien:
@@ -60,7 +60,7 @@ def Xoa_tu(tu_dien):
                 return
         print(f'The word "{word_to_delete}" was not found in the dictionary.')
 
-# Hàm tra cứu (Dùng for để quét qua mảng nếu tìm được thì in từ đó và các thành phần của nó)
+# Hàm tra cứu (Dùng for để quét qua danh sách nếu tìm được thì in từ đó và các thành phần của nó)
 def Tra_cuu(tu_dien):
       word_to_lookup = input('Enter the word to find: ').lower()  # Convert to lowercase
       found = False
@@ -77,7 +77,7 @@ def Tra_cuu(tu_dien):
       if not found:
           print(f'The word "{word_to_lookup}" was not found in the dictionary.')
 
-# Hàm lưu từ điển (Sau khi chọn chức này và nhập 1 tên file txt bất kì nó sẽ tạo 1 file mới có toàn bộ những từ đang có trong mảng cục bộ bấy giờ)
+# Hàm lưu từ điển (Sau khi chọn chức này và nhập 1 tên file txt bất kì nó sẽ tạo 1 file mới có toàn bộ những từ đang có trong danh sách bấy giờ)
 def Luu_tu_dien(tu_dien, file_name):
         try:
             with open(file_name, 'w', encoding='utf-8') as f:
